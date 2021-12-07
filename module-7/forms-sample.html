@@ -11,53 +11,43 @@
 <body>
 <h1>Forms</h1>
 
-First Name:
-
-<br/>
-Email:
-
-<br/>
-Checkbox:
-check 1
-check 2
-<br/>
-Radio:
-radio 1
-radio 2
-<br/>
-Message:
-
-<br/>
-Dropdown:
-
-Option 1
-Option 2
-Option 3
-Option 4
-Option 5
-
-<br/>
-Password:
-
-<br/>
-Number: 
-
-<br/>
-Range: 
-1 10
-<br/>
-Date: 
-
-<br/>
-Time: 
-
-<br/>
-Color: 
-
-
-<br/>
-
-
-
+<form action="/registration" method="post">
+    First Name: <input type="text" name="firstname" id="firstname"> <br/>
+    Email: <input type="email" name="email" id="email"> <br/>
+    Password: <input type="password" name="password" id="password"> <br/>
+    Checkbox: 
+    check 1 : <input type="checkbox" name="check1"  id="check1" value="check1">
+    check 2 : <input type="checkbox" name="check2"  id="check2" value="check2">
+    check 2 : <input type="checkbox" name="check3"  id="check3" value="check3">
+    <br/>
+    Radio:
+    radio 1 : <input type="radio" name="radio" value="radio1"  id="radio1">
+    radio 2 : <input type="radio" name="radio" value="radio2"  id="radio2">
+    radio 3 : <input type="radio" name="radio" value="radio3"  id="radio3">
+    <br/>
+    Message:
+    <textarea name="message" rows="4" cols="20"></textarea>
+    <br/>
+    Dropdown:
+    <select name="dropdown">
+        <option value="opt1">Option 1</option>
+        <option value="opt2">Option 2</option>
+        <option value="opt3">Option 3</option>
+        <option value="opt4">Option 4</option>
+        <option value="opt5">Option 5</option>
+    </select>
+    <br/>
+    Number: <input type="number" name="count" id="count">
+    <br/>
+    Range: 1 <input type="range" min="1" max="10"> 10
+    <br/>
+    Date:  <input type="date" name="date" id="date">
+    <br/>
+    Time: <input type="time" name="time" id="time"> 
+    <br/>
+    Color: <input type="color" name="color" id="color">
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee table</title>
+</head>
+<style>
+    table, td, th {
+        border: 2px solid green;
+        /* height: 80px; */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td, th{
+        text-align: center;
+        /* height: 50px; */
+        vertical-align: middle;
+        padding: 10px;
+    }
+    tr:hover {
+        background-color: grey;
+    }
+    tr:nth-child(even), th{
+        background-color: #d1cccc;
+    }
+</style>
+<body>
+    <h2>Employee Table</h2>
+
+    <table>
+        <!-- table header  -->
+        <thead>
+            <th>Emp Id</th>
+            <th>Name </th>
+            <th>Salary</th>
+            <th>Dept</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>100</td>
+                <td>John</td>
+                <td>100234 $</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Mike</td>
+                <td>220234 $</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>David</td>
+                <td>566234 $</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td>104</td>
+                <td>William</td>
+                <td>6767234 $</td>
+                <td>Engineering</td>
+            </tr>
+            <tr>
+                <td>105</td>
+                <td>Ram</td>
+                <td>1345734 $</td>
+                <td>Engineering</td>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+
+</body>
+</html>

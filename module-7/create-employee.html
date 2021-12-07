@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Forms</title>
+    <style></style>
+  </head>
+
+  <body>
+    <h1>Employee Form</h1>
+
+    <form action="/create-employee" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        First Name: <input type="text" name="firstname" id="firstname" /> <br />
+        Email: <input type="email" name="email" id="email" /> <br />
+        Password: <input type="password" name="password" id="password" /> <br />
+      </fieldset>
+      <fieldset>
+        <legend>Employeement Information</legend>
+        Employeement Type : Permanent :
+        <input type="checkbox" name="check1" id="check1" value="permanent" />
+        Internship :
+        <input type="checkbox" name="check2" id="check2" value="internship" />
+        Contract :
+        <input type="checkbox" name="check3" id="check3" value="contract" />
+        <br />
+        Gender : Male :
+        <input type="radio" name="gender" value="male" id="radio1" /> Female :
+        <input type="radio" name="gender" value="female" id="radio2" /> Other :
+        <input type="radio" name="gender" value="other" id="radio3" />
+        <br />
+        Message:
+        <textarea name="message" rows="4" cols="20"></textarea>
+        <br />
+        Select Department :
+        <select name="dept">
+          <option value="Engineering">Engineering</option>
+          <option value="Operations">Operations</option>
+          <option value="Testing">Testing</option>
+          <option value="Dev" selected>Developement</option>
+          <option value="HR">Human Resource</option>
+        </select>
+        <br />
+        Age <input type="number" name="age" id="age" />
+        <br />
+        Range: 10<input type="range" min="10" max="1000" /> 1000
+        <br />
+        DOB: <input type="date" name="date" id="date" />
+        <br />
+        Bith Time: <input type="time" name="time" id="time" />
+        <br />
+        Color: <input type="color" name="color" id="color" /> <br /><br />
+      </fieldset>
+      <input type="submit" value="Create Employee" />
+    </form>
+  </body>
+</html>
