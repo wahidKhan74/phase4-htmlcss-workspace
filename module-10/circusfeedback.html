@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circus Feedback</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>All About circus</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clowns.html">Clowns</a></li>
+                <li><a href="musicians.html">Musicians</a></li>
+                <li><a href="acrobats.html">Acrobats</a></li>
+                <li><a href="dancers.html">Dancers</a></li>
+                <li><a href="circusfeedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Circus Survey</h1>
+
+    <aside>
+        <figure>
+            <img src="images/circus-feedback.jpg" alt="A circus-feedback image.">
+        </figure>
+    </aside>
+    <!-- feedback form  -->
+    <form action="circus-feedback" method="post">
+        <fieldset>
+            <legend>Persoal Information :</legend>
+            Your Name <br>
+            <input type="text" name="name" required size="40"> <br>
+            Email Address <br>
+            <input type="email" name="email" required size="40"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Circus Preferences :</legend>
+            Tell us which circus events you'r going to attend <br>
+            <textarea name="preparations" cols="40" rows="6"></textarea> <br><br>
+            Do you want snacks ? <br/>
+            <input type="radio" name="snacks" value="yes" > Yes <br>
+            <input type="radio" name="snacks" value="no" > No <br><br>
+            Circus shows events <br/>
+            <input type="checkbox" name="show1" value="at"> Animal trainer Ringmaster<br>
+            <input type="checkbox" name="show2" value="cc"> Circus clown. <br>
+            <input type="checkbox" name="show3" value="gd"> Globe of death. <br>
+            <input type="checkbox" name="show4" value="hf"> Human firecracker. <br><br>
+
+            Select the circus events <br>
+            <select name="event" id="event">
+                <option value="dancers">Dancers</option>
+                <option value="dancers">Musician</option>
+                <option value="dancers">clowns</option>
+                <option value="dancers">acrobats</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit feedback">
+        </fieldset>
+
+    </form>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="clowns.html">Clowns</a></li>
+                <li><a href="musicians.html">Musicians</a></li>
+                <li><a href="acrobats.html">Acrobats</a></li>
+                <li><a href="dancers.html">Dancers</a></li>
+                <li><a href="circusfeedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

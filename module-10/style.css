@@ -15,6 +15,7 @@ aside {
     text-align: center;
     padding: 20px;
     margin-right: 20px;
+    margin-left: 20px;
     float: right;
 }
 .photo-left {
@@ -85,4 +86,9 @@ a:link, a:visited {
 .photo-right {
     float: right;
     margin-left: 20px;
+}
+
+
+form {
+    margin-right: 20px;
 }
