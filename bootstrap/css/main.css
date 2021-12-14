@@ -1,0 +1,18 @@
+.container , .container-fluid {
+    background-color: burlywood;
+}
+div{
+    padding: 10px;
+}
+
+.bg-one {
+    background-color: lightcoral;
+}
+
+.bg-two {
+    background-color: cyan;
+}
+
+.bg-three {
+    background-color: darkseagreen;
+}

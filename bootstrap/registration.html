@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration From</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- header  -->
+    <header>
+        <div class="alert alert-info alert-dismissible fade show" role="alert">
+          <strong>Welcome to Circus Ring !</strong> You should check in on some of
+          the <a href="#" class="badge badge-success">New events </a> here !.
+          <button
+            type="button"
+            class="close"
+            data-dismiss="alert"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </header>
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Circus Ring</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clowns.html">Clowns</a>
+            </li>
+            <li cclass="nav-link" lass="nav-item">
+              <a class="nav-link" href="musicians.html">Musicians</a>
+            </li>
+            <li cclass="nav-link" lass="nav-item">
+              <a class="nav-link" href="acrobats.html">Acrobats</a>
+            </li>
+            <li cclass="nav-link" lass="nav-item">
+              <a class="nav-link" href="dancers.html">Dancers</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Events
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Ringmaster</a>
+                <a class="dropdown-item" href="#">Globe of death</a>
+                <a class="dropdown-item" href="#">Human firecracker</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+      <!-- Navbar end-->
+
+      <!-- Registration Forms -->
+      <div class="container form-container mt-4">
+              <h1>Registration Form</h1>
+              <form action="/register" method="post">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstName">First Name </label>
+                                <input type="firstName" class="form-control" id="firstName" aria-describedby="firstName">
+                                <small id="firstNameHelp" class="form-text text-muted">We'll never share your firstName with anyone else.</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="lastName">Last Name </label>
+                                <input type="lastName" class="form-control" id="lastName" aria-describedby="lastName">
+                                <small id="lastNameHelp" class="form-text text-muted">We'll never share your lastName with anyone else.</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" aria-describedby="password">
+                                <small id="passwordHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="sate">State</label>
+                                <select class="form-control" id="sate">
+                                    <option value="NY" selected>New York</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="CA">California</option>
+                                    <option value="HW">Hawaii</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="zipcode">Zip code</label>
+                                <input type="zipcode" class="form-control" id="zipcode" aria-describedby="zipcode">
+                                <small id="zipcodeHelp" class="form-text text-muted">We'll never share your zipcode with anyone else.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="aggree">
+                            <label class="form-check-label" for="aggree">Please check the  terms and conditions!</label>
+                          </div>
+                    </div>
+                    <button type="submit" class="btn btn-info btn-block">Submit</button>
+                  </div>
+              </form>
+      </div>
+    
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

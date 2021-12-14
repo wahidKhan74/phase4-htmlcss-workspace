@@ -1,33 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page </title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-</head>
-<body>
-    
-    <div class="container-fluid">
-        <div class="alert alert-info alert-dismissible fade show" role="alert">
-            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <h2>All about circus</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos aliquid a reiciendis expedita quidem ea quis nisi, explicabo 
-            culpa quos totam eligendi dicta non possimus ipsum debitis veniam modi nam.
-        </p>
-        <div class="alert alert-danger" role="alert">
-            This is a error message text !
-          </div>
-          <div class="alert alert-warning" role="alert">
-            This is a warnning message text !
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Welcome to Circus Ring !</strong> You should check in on some of
+        the <a href="#" class="badge badge-success">New events </a> here !.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Circus Ring</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="clowns.html">Clowns</a>
+          </li>
+          <li cclass="nav-link" lass="nav-item">
+            <a class="nav-link" href="musicians.html">Musicians</a>
+          </li>
+          <li cclass="nav-link" lass="nav-item">
+            <a class="nav-link" href="acrobats.html">Acrobats</a>
+          </li>
+          <li cclass="nav-link" lass="nav-item">
+            <a class="nav-link" href="dancers.html">Dancers</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Events
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Ringmaster</a>
+              <a class="dropdown-item" href="#">Globe of death</a>
+              <a class="dropdown-item" href="#">Human firecracker</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- Navbar end-->
+
+    <div class="jumbotron">
+      <h1 class="display-4">All about circus</h1>
+      <aside>
+        <blockquote>
+          Time is a circus, always packing up and moving away.Nobody should try
+          to play comedy unless they have a circus going on inside.it's for only
+          fun you can buy that is good for you.
+        </blockquote>
+
+        - Ernst Lubitsch
+      </aside>
+      <img
+        class="photo-left"
+        src="images/circus-logo.jpg"
+        alt="circus image"
+        width="128"
+        height="128"
+      />
+      <p>
+        A circus is a company of performers who put on diverse entertainment
+        shows that may include <a href="clowns.html">clowns</a>, acrobats,
+        trained animals, trapeze acts,<a href="musicians.html">musicians</a> ,
+        dancers, hoopers, tightrope walkers, jugglers, magicians, unicyclists,
+        as well as other object manipulation and stunt-oriented artists. The
+        term circus also describes the performance which has followed various
+        formats through its 250-year modern history.
+      </p>
+
+      <p>
+        Philip Astley is credited with being the father of the modern circus
+        when he opened the first circus in 1768 in England. A skilled
+        equestrian, Astley demonstrated trick riding, riding in a circle rather
+        than a straight line as his rivals did, and thus chanced on the format
+        which was later named a "circus".
+      </p>
+      <p>
+        To learn more about coffee, just browse our informative site, or you can
+        visit https://en.wikipedia.org/wiki/Circus wikipedia for even more.
+      </p>
     </div>
-    <script src="js/jquery.slim.min.js" ></script>
-    <script src="js/bootstrap.min.js" ></script>
-</body>
+    <!-- jumbrotron -->
+
+    
+    
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
 </html>
